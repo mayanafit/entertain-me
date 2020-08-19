@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+}
+
+#navLogo {
+  font-family: 'Bungee Inline', cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.text-title {
+  width: 120px;
+  font-size: 25px;
+}
+
+.button-add {
+  font-size: 30px;
+  width: 100px;
+}
+
+.button-edit {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.preload {  
+  margin-top: 80px;
+  padding: 100px 0px;
+  background: rgba(156, 156, 156, 0.1); 
+}
+
+.button-edit:hover {
+  text-decoration: none;
+  background: lightgrey;
+}
+
+.button-playlist:hover {
+  text-decoration: none;
+  background: lightgrey;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+}
+
+.body-content {
+  padding: 120px 0px;
+  
+}
+
+#body {
+  background-image: url(./assets/background.png);
+  background-size: initial;
+  min-height: 650px;
+}
+
+.tagStyle {
+  background:rgb(236, 201, 0);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.cardStyle {
+  border-radius: 10px;
+  margin: 0px 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-card {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 18px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu {
+  font-family: 'Bungee', cursive;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.link-content {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+.link-content:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.row-overflow {
+  display: flex;
+  overflow-x: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hover-red:hover {
+  color: red;
+}
+
+
+.text-hover {
+  font-size: 17px;
+  margin-left: 5px;
+  color: black;
+}
+
+.menu:hover {
+  text-decoration: none;
+  color: black;
+  background: rgb(224, 223, 223);
+}
