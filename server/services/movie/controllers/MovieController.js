@@ -25,13 +25,15 @@ class MovieController {
     }
 
     static async insertOne (req, res) {
-        const tags = req.body.tags.split(`,`)
+        const tagsArr = req.body.tags.split(`,`)
+        const tags = tagsArr.map(tag => tag.toLowerCase())
         const newMovie = {
             title: req.body.title,
             overview: req.body.overview,
             poster_path: req.body.poster_path,
             popularity: +req.body.popularity,
             tags,
+            type: 'movie',
         }
         try {
             const result = await Movie.insertOne(newMovie)
