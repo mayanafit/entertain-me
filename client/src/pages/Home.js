@@ -28,6 +28,28 @@ export const FETCH_ENTERTAINME = gql`
 
 function Home() {
   const {loading, error, data} = useQuery(FETCH_ENTERTAINME)
+  
+  // const handleWheelMovie = (e) => {
+  //   e.preventDefault()
+  //   var container = document.getElementById('movies')
+  //   var containerScrollPosition = document.getElementById('movies').scrollLeft
+  //   container.scrollTo({
+  //       top: 0,
+  //       left: containerScrollPosition + e.deltaY,
+  //       behaviour: 'smooth'
+  //   })
+  // }
+
+  // const handleWheelSerie = (e) => {
+  //   e.preventDefault()
+  //   var container = document.getElementById('series')
+  //   var containerScrollPosition = document.getElementById('series').scrollLeft
+  //   container.scrollTo({
+  //       top: 0,
+  //       left: containerScrollPosition + e.deltaY,
+  //       behaviour: 'smooth'
+  //   })
+  // }
   return (
     <>
       {loading ? <Loading />
@@ -35,13 +57,13 @@ function Home() {
           <div className="mx-5">
             <div className="mx-4 mt-5">
               <h2 className="text-center text-light">Movies</h2>
-              <div className="row-overflow">
+              <div id="movies" className="row-overflow">
                 {data.movies.map(movie => <Card key={movie._id} data={movie} />)}
               </div>
             </div>
             <div className="mx-4 mt-5">
               <h2 className="text-center text-light">Series</h2>
-              <div className="row-overflow">
+              <div id="series" className="row-overflow">
                 {data.series.map(serie => <Card key={serie._id} data={serie} />)}
               </div>
             </div>
