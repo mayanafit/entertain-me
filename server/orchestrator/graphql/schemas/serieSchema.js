@@ -34,7 +34,7 @@ const typeDefs = gql`
     }
 `;
 
-const serieUrl = 'http://localhost:3002/series';
+const serieUrl = 'http://localhost:4002/series';
 
 const resolvers = {
     Query: {

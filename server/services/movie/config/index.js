@@ -1,6 +1,6 @@
 const { MongoClient } = require(`mongodb`);
 const dbUrl = process.env.DB_URL || `mongodb://localhost:27017`
-const dbName = process.env.DB_NAME || `movieEM`
+const dbName = process.env.DB_NAME || `entertainmeMovie`
 
 const client = new MongoClient(dbUrl, {useUnifiedTopology: true})
 client.connect()

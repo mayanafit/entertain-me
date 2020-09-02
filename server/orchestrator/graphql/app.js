@@ -19,6 +19,6 @@ const schema = makeExecutableSchema({
 
 const server = new ApolloServer({ schema })
 
-server.listen().then(({ url }) => {
+server.listen(4003).then(({ url }) => {
     console.log(`🚀  Server ready at ${url}`);
   });
